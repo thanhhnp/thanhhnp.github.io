@@ -1,0 +1,910 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #424e4a;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+button, a {
+  outline: none !important;
+}
+
+#fp-nav ul li {
+  width: 20px;
+  height: 20px;
+}
+
+#fp-nav ul li a span {
+  width: 14px;
+  height: 14px;
+  margin: -7px 0 0 -7px;
+  background: #fff;
+}
+
+#fp-nav ul li a.active span {
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+}
+
+#staticImg {
+  position: absolute;
+  max-width: 70vw;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  -webkit-transition: all 750ms ease-in-out;
+  transition: all 750ms ease-in-out;
+}
+
+#staticImg .background-leaf {
+  width: 100%;
+}
+
+#staticImg.moveDown {
+  -webkit-transform: translate3d(-20%, 50%, 0);
+          transform: translate3d(-20%, 50%, 0);
+}
+
+#staticImg2 {
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: -300vh;
+  left: auto;
+  max-width: 70vw;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 1250ms ease-in-out;
+  transition: all 1250ms ease-in-out;
+}
+
+#staticImg2 .background-leaf {
+  width: 100%;
+}
+
+#staticImg2.moveUp {
+  -webkit-transform: translate3d(30%, -100%, 0) rotate(180deg);
+          transform: translate3d(30%, -100%, 0) rotate(180deg);
+}
+
+.section {
+  background: url("../images/background.jpg");
+  overflow: hidden;
+  text-align: center;
+}
+
+.decor-leaf {
+  position: absolute;
+  max-width: 150px;
+  width: 20vw;
+  z-index: 9;
+}
+
+.decor-leaf.top-right {
+  top: -30px;
+  right: 50px;
+  bottom: auto;
+  left: auto;
+}
+
+.decor-leaf.top-left {
+  top: 20px;
+  right: auto;
+  bottom: auto;
+  left: -30px;
+}
+
+.decor-leaf.top-center {
+  top: -30px;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.decor-leaf.round-shape {
+  max-width: 200px;
+  opacity: 0.6;
+  top: -70px;
+}
+
+.decor-leaf.bottom-left {
+  top: auto;
+  right: auto;
+  bottom: -20px;
+  left: 30vw;
+}
+
+.decor-leaf.bottom-center {
+  top: auto;
+  right: auto;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.decor-leaf.rotated {
+  -webkit-transform: rotate(90deg) scaleY(-1);
+          transform: rotate(90deg) scaleY(-1);
+}
+
+h2 {
+  font-size: 60px;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+h2 span {
+  font-size: 24px;
+  font-weight: 500;
+  display: block;
+}
+
+h2.left-align {
+  text-align: left;
+  padding-left: 10%;
+}
+
+ul {
+  list-style: none;
+}
+
+svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+span.highlight {
+  background-image: linear-gradient(to top, #e6b9b2 50%, transparent 0px);
+}
+
+.infoList {
+  padding-left: 50px;
+  text-align: left;
+}
+
+.infoList li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 20px 0;
+}
+
+.infoList li img {
+  width: 90px;
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 30px;
+}
+
+#hello {
+  position: relative;
+}
+
+#hello .myImage {
+  position: absolute;
+  width: 50vw;
+  height: 80vh;
+  left: 0;
+  bottom: 0;
+  opacity: 0.6;
+  border-top-left-radius: 25vw;
+  border-bottom-right-radius: 25vw;
+  overflow: hidden;
+  z-index: 9;
+}
+
+#hello .myImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#hello .helloText {
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  position: relative;
+}
+
+#hello .helloText h1 {
+  font-size: 100px;
+  color: #fff;
+}
+
+#hello .helloText p {
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#aboutV .aboutContent {
+  width: 80%;
+  max-width: 1170px;
+  margin: 7vh auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#aboutV .contentLeft, #aboutV .contentRight {
+  width: 50%;
+}
+
+#aboutV .myImage {
+  width: 100%;
+  height: 50vh;
+  border-top-left-radius: 12vw;
+  border-bottom-right-radius: 12vw;
+  overflow: hidden;
+  z-index: 9;
+}
+
+#aboutV .myImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#aboutV .contentLeft {
+  padding-right: 50px;
+}
+
+#aboutV .contentRight {
+  text-align: left;
+}
+
+#mySkills {
+  padding-top: 7vh;
+}
+
+#mySkills .skillSlide {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#mySkills .skillSlide .leftPart, #mySkills .skillSlide .rightPart {
+  width: 50%;
+}
+
+#mySkills .skillSlide .topPart {
+  height: 60vh;
+}
+
+#mySkills .skillSlide.col {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mySkills .skillSlide .skillItem {
+  padding: 0 70px;
+}
+
+#mySkills .skillSlide .skillItem .itemTop {
+  width: 240px;
+  height: 240px;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  background: #fff;
+  padding-top: 86px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+#mySkills .skillSlide .skillList {
+  width: 100%;
+  margin: 50px 0;
+}
+
+#mySkills .skillSlide .skillList .skillIcon {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+}
+
+#mySkills .skillSlide .skillList .skillIcon img {
+  width: 100%;
+}
+
+#mySkills h2 {
+  position: absolute;
+  top: 5vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#mySkills .fp-controlArrow {
+  height: 50px;
+  width: 50px;
+  border: none;
+  background: red;
+  background-size: contain !important;
+  -webkit-transition: 350ms;
+  transition: 350ms;
+  opacity: 0.5;
+}
+
+#mySkills .fp-controlArrow.fp-prev {
+  left: 7vw;
+  background: url("../images/prev.svg") center center no-repeat;
+}
+
+#mySkills .fp-controlArrow.fp-next {
+  right: 7vw;
+  background: url("../images/next.svg") center center no-repeat;
+}
+
+#mySkills .fp-controlArrow:hover {
+  opacity: 1;
+}
+
+#myWorks .projectsList {
+  width: 80%;
+  margin: auto;
+  margin-top: 3vh;
+  z-index: 9;
+}
+
+#myWorks .projectsList .projectItem {
+  height: 35vh;
+  overflow: hidden;
+  margin-bottom: -7px;
+  position: relative;
+  -webkit-box-shadow: 9px 9px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 9px 9px 0px rgba(0, 0, 0, 0.2);
+}
+
+#myWorks .projectsList .projectItem::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: #4c9079;
+  opacity: 0.5;
+  left: 0;
+  top: 100%;
+  -webkit-transition: all ease-in 250ms;
+  transition: all ease-in 250ms;
+}
+
+#myWorks .projectsList .projectItem a.itemLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+#myWorks .projectsList .projectItem img.itemImg {
+  width: 100%;
+  height: 35vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 550ms;
+  transition: 550ms;
+}
+
+#myWorks .projectsList .projectItem h4.projectName {
+  font-size: 36px;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: left;
+  line-height: 1.2;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  -webkit-transition: 350ms;
+  transition: 350ms;
+  opacity: 0;
+  z-index: 8;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+#myWorks .projectsList .projectItem:hover h4.projectName {
+  opacity: 1;
+  -webkit-transition: 350ms;
+  transition: 350ms;
+}
+
+#myWorks .projectsList .projectItem:hover img.itemImg {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+#myWorks .projectsList .projectItem:hover:after {
+  opacity: 0.7;
+  top: 0;
+}
+
+#myWorks .slick-slide > div {
+  padding: 10px;
+}
+
+#contactV .contactText {
+  width: 50%;
+  padding-left: 10%;
+  z-index: 9;
+  text-align: left;
+  position: relative;
+  z-index: 9;
+}
+
+#contactV .contactText h2 {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+#contactV .contactText p {
+  margin-bottom: 15px;
+}
+
+#contactV .contactText ul.contactList li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#contactV .contactText ul.contactList li a {
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+#contactV .contactText ul.contactList li a img {
+  max-width: 100%;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  -webkit-box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+#contactV .contactText ul.contactList li a:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#contactV .contactImg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+button.slick-arrow {
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  font-size: 0;
+  background: url("../images/prev.svg");
+  background-size: contain !important;
+  border: none;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+button.slick-arrow.slick-next {
+  background: url("../images/next.svg");
+  background-size: contain !important;
+  left: auto;
+  right: -60px;
+}
+
+button.slick-arrow:hover {
+  opacity: 1;
+}
+
+@-webkit-keyframes slideTask {
+  0% {
+    -webkit-transform: rotateX(0deg) translateY(-30%);
+            transform: rotateX(0deg) translateY(-30%);
+  }
+  100% {
+    -webkit-transform: rotateX(20deg) translateY(0);
+            transform: rotateX(20deg) translateY(0);
+  }
+}
+
+@keyframes slideTask {
+  0% {
+    -webkit-transform: rotateX(0deg) translateY(-30%);
+            transform: rotateX(0deg) translateY(-30%);
+  }
+  100% {
+    -webkit-transform: rotateX(20deg) translateY(0);
+            transform: rotateX(20deg) translateY(0);
+  }
+}
+
+@-webkit-keyframes movingShape {
+  100% {
+    -webkit-transform: skew(5deg, -5deg) scale(0.94);
+            transform: skew(5deg, -5deg) scale(0.94);
+  }
+}
+
+@keyframes movingShape {
+  100% {
+    -webkit-transform: skew(5deg, -5deg) scale(0.94);
+            transform: skew(5deg, -5deg) scale(0.94);
+  }
+}
+
+@-webkit-keyframes waveLeaf {
+  0% {
+    -webkit-transform: rotate(-10deg) translateY(0);
+            transform: rotate(-10deg) translateY(0);
+  }
+  100% {
+    -webkit-transform: rotate(10deg) translateY(10px);
+            transform: rotate(10deg) translateY(10px);
+  }
+}
+
+@keyframes waveLeaf {
+  0% {
+    -webkit-transform: rotate(-10deg) translateY(0);
+            transform: rotate(-10deg) translateY(0);
+  }
+  100% {
+    -webkit-transform: rotate(10deg) translateY(10px);
+            transform: rotate(10deg) translateY(10px);
+  }
+}
+
+@-webkit-keyframes expandRound {
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes expandRound {
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@-webkit-keyframes slidePhone {
+  0% {
+    -webkit-transform: rotateX(0deg) translateY(-20px);
+            transform: rotateX(0deg) translateY(-20px);
+  }
+  100% {
+    -webkit-transform: rotateX(20deg) translateY(20px);
+            transform: rotateX(20deg) translateY(20px);
+  }
+}
+
+@keyframes slidePhone {
+  0% {
+    -webkit-transform: rotateX(0deg) translateY(-20px);
+            transform: rotateX(0deg) translateY(-20px);
+  }
+  100% {
+    -webkit-transform: rotateX(20deg) translateY(20px);
+            transform: rotateX(20deg) translateY(20px);
+  }
+}
+
+svg #html5, svg #css, svg #js, svg #jq {
+  -webkit-animation: slideTask 1s ease-in-out infinite alternate;
+          animation: slideTask 1s ease-in-out infinite alternate;
+  transform-box: fill-box;
+}
+
+svg #bs, svg #wp, svg #es6 {
+  -webkit-animation: slideTask 1s linear 200ms infinite alternate;
+          animation: slideTask 1s linear 200ms infinite alternate;
+  transform-box: fill-box;
+}
+
+svg #bgshape {
+  -webkit-animation: movingShape 1s linear infinite alternate;
+          animation: movingShape 1s linear infinite alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+svg #round {
+  -webkit-animation: expandRound 1s ease-out infinite alternate;
+          animation: expandRound 1s ease-out infinite alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+svg #phone {
+  -webkit-animation: slidePhone 1s ease-in-out infinite alternate;
+          animation: slidePhone 1s ease-in-out infinite alternate;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+.skillIcon:nth-child(3n + 0) {
+  -webkit-animation: expandRound 1s ease-out 0ms infinite alternate;
+          animation: expandRound 1s ease-out 0ms infinite alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+.skillIcon:nth-child(3n + 1) {
+  -webkit-animation: expandRound 1s ease-out 200ms infinite alternate;
+          animation: expandRound 1s ease-out 200ms infinite alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+.skillIcon:nth-child(3n + 2) {
+  -webkit-animation: expandRound 1s ease-out 400ms infinite alternate;
+          animation: expandRound 1s ease-out 400ms infinite alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+.skillIcon:nth-child(3n + 3) {
+  -webkit-animation: expandRound 1s ease-out 600ms infinite alternate;
+          animation: expandRound 1s ease-out 600ms infinite alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+path#Vector_28 {
+  -webkit-animation: waveLeaf 2500ms ease-in-out infinite alternate;
+          animation: waveLeaf 2500ms ease-in-out infinite alternate;
+  transform-box: fill-box;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+@-webkit-keyframes movingBoard {
+  0% {
+    -webkit-transform: rotateY(0deg) translateX(0);
+            transform: rotateY(0deg) translateX(0);
+  }
+  100% {
+    -webkit-transform: rotateY(-10deg) translateX(10%);
+            transform: rotateY(-10deg) translateX(10%);
+  }
+}
+
+@keyframes movingBoard {
+  0% {
+    -webkit-transform: rotateY(0deg) translateX(0);
+            transform: rotateY(0deg) translateX(0);
+  }
+  100% {
+    -webkit-transform: rotateY(-10deg) translateX(10%);
+            transform: rotateY(-10deg) translateX(10%);
+  }
+}
+
+#board {
+  -webkit-animation: movingBoard 1s linear infinite alternate;
+          animation: movingBoard 1s linear infinite alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@media (max-width: 1280px) {
+  #aboutV .aboutContent, #mySkills .skillSlide {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .infoList {
+    padding-left: 25px;
+  }
+  .infoList li img {
+    width: 60px;
+  }
+  #hello .myImage {
+    height: 70vh;
+    border-top-left-radius: 20vw;
+    border-bottom-right-radius: 20vw;
+  }
+  #aboutV .contentLeft {
+    padding-right: 25px;
+  }
+  #mySkills .fp-controlArrow.fp-prev {
+    left: 50px;
+  }
+  #mySkills .fp-controlArrow.fp-next {
+    right: 50px;
+  }
+  #myWorks .projectsList .projectItem {
+    height: 30vh;
+  }
+  #contactV .contactText {
+    width: 65%;
+  }
+  #contactV .contactImg {
+    width: 60%;
+    bottom: -50px;
+  }
+}
+
+@media (max-width: 1199px) {
+  #contactV .contactText h2 {
+    font-size: 40px;
+  }
+  #contactV .contactText ul.contactList li a {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 40px 0;
+  }
+  .fp-section, .fp-section.fp-table, .fp-slide.fp-table, .fp-tableCell {
+    display: block;
+    height: auto !important;
+  }
+  .decor-leaf {
+    max-width: 120px;
+  }
+  .decor-leaf.round-shape {
+    top: 0;
+    max-width: 150px;
+  }
+  .decor-leaf.bottom-left, .decor-leaf.bottom-center {
+    bottom: 20px;
+  }
+  .decor-leaf.top-center, .decor-leaf.top-right {
+    top: 20px;
+  }
+  #hello .myImage {
+    width: 800px;
+    height: 600px;
+    position: static;
+    margin: auto;
+    opacity: 1;
+  }
+  #hello .helloText {
+    margin-bottom: 40px;
+  }
+  #hello .helloText h1 {
+    font-size: 80px;
+    color: #424e4a;
+  }
+  #hello .helloText p {
+    color: #424e4a;
+  }
+  #aboutV h2 {
+    margin-top: 120px;
+  }
+  #aboutV .contentLeft {
+    display: none;
+  }
+  #aboutV .contentRight {
+    width: 800px;
+  }
+  #aboutV .aboutContent {
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
+  #aboutV .aboutContent ul.infoList {
+    padding-left: 0;
+  }
+  #aboutV .aboutContent ul.infoList li {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #mySkills h2 {
+    -webkit-transform: none;
+            transform: none;
+    left: 0;
+    top: 0;
+    position: relative;
+  }
+  #mySkills .skillSlide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 20px;
+  }
+  #mySkills .skillSlide .leftPart, #mySkills .skillSlide .rightPart {
+    width: 100%;
+  }
+  #mySkills .skillSlide .leftPart svg, #mySkills .skillSlide .rightPart svg {
+    width: 80%;
+  }
+  #mySkills .skillSlide .leftPart .infoList {
+    padding-left: 0;
+    text-align: center;
+  }
+  #mySkills .skillSlide .leftPart .infoList li {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #contactV .contactImg {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+  #contactV .contactText {
+    width: 100%;
+    padding: 0 50px;
+    text-align: center;
+  }
+  #myWorks .projectsList {
+    padding: 0 50px;
+    width: 100%;
+  }
+  #myWorks .projectsList .projectItem::after {
+    top: 0;
+  }
+  #myWorks .projectsList .projectItem h4.projectName {
+    opacity: 1;
+  }
+  #staticImg, #staticImg2 {
+    display: none;
+  }
+  h2.left-align {
+    padding-left: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
