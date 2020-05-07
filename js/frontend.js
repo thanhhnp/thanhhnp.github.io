@@ -49,12 +49,23 @@ jQuery(document).ready(function(){
                 }
             },
             {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                  rows: 2,
+                  dots: true,
+                  arrows: false,
+                    }
+            },
+            {
                 breakpoint: 600,
                 settings: {
                   slidesToShow: 1,
                   slidesToScroll: 1,
                   rows: 2,
-                  dots: true,
+                  dots:true,
+                  arrows: false,
                 }
               },
         ]

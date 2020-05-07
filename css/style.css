@@ -907,6 +907,9 @@ path#Vector_28 {
   h2.left-align {
     padding-left: 50px;
   }
+  .infoList {
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 991px) {
@@ -926,6 +929,71 @@ path#Vector_28 {
   #contactV svg {
     height: auto;
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .decor-leaf.top-right, .decor-leaf.bottom-right {
+    right: -20px;
+  }
+  #hello .myImage {
+    height: 400px;
+  }
+  button.slick-arrow,
+  #mySkills .fp-controlArrow {
+    height: 30px;
+    width: 30px;
+  }
+  #mySkills .skillSlide {
+    padding: 0;
+  }
+  #myWorks .projectsList {
+    padding: 0;
+  }
+  #myWorks .projectsList .projectItem h4.projectName {
+    font-size: 24px;
+  }
+  h2.left-align {
+    padding-left: 0;
+  }
+  h2 span {
+    font-size: 20px;
+  }
+  ul.slick-dots {
+    margin-top: 20px;
+    text-align: center;
+  }
+  ul.slick-dots li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  ul.slick-dots li button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background: #fff;
+    border-radius: 50%;
+  }
+  ul.slick-dots li.slick-active button {
+    background: #4c9079;
+  }
+}
+
+@media (max-width: 599px) {
+  #hello .helloText h1 {
+    font-size: 48px;
+  }
+  #aboutV .aboutContent ul.infoList li {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #mySkills .skillSlide .skillList .skillIcon {
+    margin: 20px 50px;
+  }
+  #contactV .contactText {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
