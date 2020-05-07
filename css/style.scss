@@ -699,6 +699,7 @@ path#Vector_28 {
                 width: 100%;
                 svg {
                     width: 80%;
+                    height: auto;
                 }
             }
             .leftPart {
@@ -753,9 +754,37 @@ path#Vector_28 {
 }
 @media(max-width: 991px)
 {
-
+    .section {
+        padding: 50px;
+    }
+    #hello {
+        .myImage {
+            width: 100%;
+        }
+    }
+    #aboutV{
+        .aboutContent {
+            padding: 0;
+        }
+    }
+    #mySkills{
+        .skillSlide{
+            .skillList{
+                .skillIcon {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+    }
+    #contactV {
+        svg {
+            height: auto;
+            margin-top: 40px;
+        }
+    }
 }
-@media(max-width: 768px)
+@media(max-width: 767px)
 {
 
 }

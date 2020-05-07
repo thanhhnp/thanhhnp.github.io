@@ -869,6 +869,7 @@ path#Vector_28 {
   }
   #mySkills .skillSlide .leftPart svg, #mySkills .skillSlide .rightPart svg {
     width: 80%;
+    height: auto;
   }
   #mySkills .skillSlide .leftPart .infoList {
     padding-left: 0;
@@ -905,6 +906,26 @@ path#Vector_28 {
   }
   h2.left-align {
     padding-left: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .section {
+    padding: 50px;
+  }
+  #hello .myImage {
+    width: 100%;
+  }
+  #aboutV .aboutContent {
+    padding: 0;
+  }
+  #mySkills .skillSlide .skillList .skillIcon {
+    width: 80px;
+    height: 80px;
+  }
+  #contactV svg {
+    height: auto;
+    margin-top: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
