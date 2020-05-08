@@ -1,5 +1,8 @@
 jQuery(document).ready(function(){
 
+    setTimeout(()=>{
+        jQuery(".overlayBg").fadeOut(550);
+    },2500);
     //initialising fullpage.js in the jQuery way
     jQuery('#myPage').fullpage({
         navigation: true,
